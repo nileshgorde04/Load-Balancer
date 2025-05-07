@@ -1,0 +1,27 @@
+{
+  "name": "load-balancer",
+  "version": "1.0.0",
+  "description": "A simple load balancer with health checks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "backend1": "node backend1.js",
+    "backend2": "node backend2.js",
+    "backend3": "node backend3.js",
+    "start-backends": "node backend1.js & node backend2.js & node backend3.js",
+    "start-all": "node backend1.js & node backend2.js & node backend3.js & node index.js"
+  },
+  "keywords": ["load-balancer", "node", "http-proxy"],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "commander": "^11.0.0",
+    "http-proxy": "^1.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
